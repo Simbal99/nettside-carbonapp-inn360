@@ -26,9 +26,13 @@
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='methodology.css') }}">
       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carbon_app.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='carbon_app_form.css') }}">
 
       <!-- To activate media queries in devices -->
       <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+
+      <!--For the plots-->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
         {% if title %}
             <title>{{ title }}</title>
@@ -41,23 +45,16 @@
         <section class="section_carbon_app_navbar">
           <div class="container">
             <div class="carbon_app_navbar">
-              <a href="{{url_for('home.home_home')}}"><h1><span class="text-logo"><i class="fa-solid fa-earth-americas"></i> </span>
+              <a href="{{url_for('home.home_home')}}"> <h1 class="logo">
+                <span class="text-logo"><i class="fa-solid fa-earth-americas"></i> </span> 
               </h1></a>
-                
               <nav>
-
                 <ul>
                     <li>
-                      <a href="{{url_for('users.register')}}">Register</a>
+                        <a href="{{url_for('home.home_home')}}"></a>
                     </li>
                     <li>
-                      <a href="{{url_for('users.login')}}">Login</a>
-                    </li>
-              
-                   
-
-                    <li>
-                        <a href="{{url_for('methodology.methodology_home')}}">Methodology</a>
+                        <a href="{{url_for('methodology.methodology_home')}}">Methodlogy</a>
                     </li>
                     <li>
                         <a href="{{url_for('carbon_app.carbon_app_home')}}">Carbon App</a>
@@ -74,9 +71,9 @@
           <div class="container">
             <div class="footer">
               <h1>
-               Carbon App 2023
+                Carbon App 
                 <a href="#">
-                  <i class="fa-solid fa-circle-up" style="color: #0023ea"></i>
+                  <i class="fa-solid fa-circle-up" style="color: #568c63"></i>
                 </a>
               </h1>
             </div>
