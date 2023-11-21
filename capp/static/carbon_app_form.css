@@ -1,23 +1,23 @@
 /* Rainy theme 5 -Green Digitalization Course-:
  rt5-1: #c5c8d9
  rt5-2: #9fa7bf
- rt5-3: #2a4359
+ rt5-3: 5b63d8
  rt5-4: #49736f
  rt5-5: #568c63 
- rt4-3: #6da6a6 For the main chat  
+ rt4-3: #2a4359 For the main chat  
  RT1-2: #789091 For the chat creation */
 /* App Calculator Entry */
       /*Container section select entry*/
       .section_calculator_students_entry_css {
-        background: #2a4359;
+        background: 5b63d8;
         display: flex;
         align-items: start;
         justify-content: space-between;
     }
     .section_calculator_students_entry_css .box {
         flex: 1;
-        background: #6da6a6 ;
-        color: #343a40;
+        background: #5b63d8 ;
+        color: #00b7ff;
         border-radius: 10px;
         margin: 20px 10px;
         padding: 15px 20px;
@@ -25,8 +25,8 @@
     }
     .section_calculator_students_entry_css .box:nth-of-type(1) {
         flex-grow:1;
-        background: #2a4359 ;
-        color: #fff;
+        background: 5b63d8 ;
+        color: #000000;
         border-radius: 10px;
         margin: 0px 0px;
         padding: 0px 0px;
@@ -34,8 +34,8 @@
     }
     .section_calculator_students_entry_css .box:nth-of-type(2) {
         flex-grow:5;
-        background: #6da6a6 ;
-        color: #343a40;
+        background: #000000 ;
+        color: #ffa500;
         border-radius: 10px;
         margin: 20px 10px;
         padding: 15px 20px;
@@ -43,8 +43,8 @@
     }
     .section_calculator_students_entry_css .box:nth-of-type(3) {
         flex-grow:1;
-        background: #2a4359;
-        color: #fff;
+        background: #5b63d8;
+        color: #ffa500;
         border-radius: 10px;
         margin: 0px 0px;
         padding: 0px 0px;
@@ -54,15 +54,15 @@
     /* App Calculator Output */
     /*Container display output*/
     .section_calculator_students_output_css {
-        background: #2a4359;
+        background: #000;
         display: flex;
         align-items: start;
         justify-content: space-between;
     }
     .section_calculator_students_output_css .box {
         flex: 1;
-        background: #6da6a6 ;
-        color: #343a40;
+        background: #000 ;
+        color: #ffa500;
         border-radius: 10px;
         margin: 20px 10px;
         padding: 15px 20px;
@@ -70,8 +70,8 @@
     }
     .section_calculator_students_output_css .box:nth-of-type(1) {
         flex-grow:6;
-        background: #6da6a6;
-        color: #343a40;
+        background: #000000;
+        color: #ffa500;
         border-radius: 10px;
         margin: 20px 10px;
         padding: 15px 20px;
@@ -79,8 +79,8 @@
     }
     .section_calculator_students_output_css .box:nth-of-type(2) {
         flex-grow:4;
-        background: #6da6a6 ;
-        color: #343a40;
+        background: #000000 ;
+        color: #ffa500;
         border-radius: 10px;
         margin: 20px 10px;
         padding: 15px 20px;
@@ -95,8 +95,8 @@
     }
     .section_km_fuel_css .box {
         flex: 1;
-        background: #9fa7bf ;
-        color: #343a40;
+        background: #004cff ;
+        color: #ffa500;
         border-radius: 10px;
         margin: 10px 10px;
         padding: 10px 10px;
@@ -104,8 +104,8 @@
     }
     .section_km_fuel_css .box:nth-of-type(1) {
         flex-grow:1;
-        background: #9AC7A9 ;
-        color: #343a40;
+        background: #004cff;
+        color: #ffa500;
         border-radius: 10px;
         margin: 10px 10px;
         padding: 10px 10px;
@@ -113,8 +113,8 @@
     }
     .section_km_fuel_css .box:nth-of-type(2) {
         flex-grow:1;
-        background: #9AC7A9;
-        color: #343a40;
+        background: #004cff;
+        color: #ffa500;
         border-radius: 10px;
         margin: 10px 10px;
         padding: 10px 10px;
@@ -122,8 +122,8 @@
     }
     .section_km_fuel_css .box:nth-of-type(3) {
         flex-grow:1;
-        background: #9AC7A9 ;
-        color: #343a40;
+        background: #004cff ;
+        color: #ffa500;
         border-radius: 10px;
         margin: 10px 10px;
         padding: 10px 10px;
