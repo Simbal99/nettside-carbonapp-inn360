@@ -11,10 +11,21 @@
                 <p style="text-align:justify; padding: 0 15px;">
                     Curious about how your travel choices affect the environment? Our Carbon Calculator is here to help! This user-friendly tool is specifically designed to calculate the carbon emissions from your daily transportation methods. Whether you travel by car, bus, bike, or train, our calculator provides a clear picture of your environmental impact.
                 </p>
+                <style>
+                    .btn {
+                      transition: transform 0.3s, box-shadow 0.3s;
+                    }
+                  
+                    .btn:hover {
+                      transform: translateY(-2px);
+                      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    }
+                  </style>
                 <div class="container_buttons_links_header_carbon_app" style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
                     <a href="{{url_for('methodology.methodology_home')}}" class="btn btn-lg" style="background-color:#f9a825; color: white;">Methodology</a>
                     <a href="#" class="btn btn-lg" style="background-color:#f9a825; color: white;" data-toggle="modal" data-target="#carbon_app_instructions">Instructions</a>
                 </div>  
+                
                 <!-- Modal Instructions -->
                 <div class="modal fade" id="carbon_app_instructions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">

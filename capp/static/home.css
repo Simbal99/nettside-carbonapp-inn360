@@ -1,59 +1,85 @@
-/* Colors 
-Home, section 1 (head, background): ffffff
-Home, section 1 (head, boxes): #568c63
-Home, section 2 (developers, background): #c5c8d9 
-Home, section 2 (developers, boxes): #49736f
- */
 
-/* Utilities  */
+:root {
+  --box-bg-color: #217fa7; 
+  --box-hover-color: #466fa6; /* Blue for hover effects */
+  --developer-box-bg-color: #f5f5f5;
+  --section-background: #f5f5f5; /* Light grey for section backgrounds */
+}
+
+/* Utilities */
 p {
   margin: 10px 0;
   font-size: 18px;
 }
-/* Section header_home */
+
+/* Section header_home - Updated Styles */
 .section_header_home {
-  background-color:#9e9e9e;
+  background-color: var(--section-background);
+  padding: 20px 0; /* Added padding for better spacing */
 }
+
 .header_home {
-  display: flex;  
-  align-items: start;
-  background: ffffff;
+  display: flex;
+  align-items: center; /* Align items to the center */
+  justify-content: space-between; /* Distribute space evenly */
+  padding: 0 20px; /* Add horizontal padding */
 }
+
 .header_home .box {
-  flex: 1;
-  background: ffffff;
+  background: var(--box-bg-color);
   color: #fff;
   border-radius: 10px;
-  margin: 20px 10px;
-  padding: 15px 20px;
-  text-align:center;
+  margin: 0 10px; /* Adjusted margin for better spacing */
+  padding: 20px; /* Increased padding for a better visual */
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease; /* Smooth transition for interactions */
 }
+
+/* Hover effect for boxes */
+.header_home .box:hover {
+  transform: translateY(-5px); /* Slight raise effect on hover */
+  background-color: var(--box-hover-color); /* Change color on hover */
+}
+
+/* Responsive size adjustments for box flex-grow */
 .header_home .box:nth-of-type(1) {
-  flex-grow:2;
+  flex-grow: 3; /* Increased flex-grow for the first box */
 }
 .header_home .box:nth-of-type(2) {
-  flex-grow:1;
+  flex-grow: 1;
 }
+
 .container_buttons_links_header_home {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
+  gap: 10px; /* Added gap for spacing between buttons */
 }
+
 .container_buttons_links_header_home a:hover {
-  color: ffffff;
+  color: var(--box-hover-color);
 }
+
 .container_buttons_links_header_home btn {
   width: 100px;
   height: 100px;
-  background: ffffff;
+  background: var(--developer-box-bg-color); /* Match the developer section boxes */
   color: #fff;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Rounded buttons for a modern look */
+  transition: background-color 0.3s; /* Smooth transition for hover */
 }
+
+.container_buttons_links_header_home btn:hover {
+  background-color: var(--box-hover-color); /* Change background color on hover */
+}
+
 /* Section developers */
 .section_developers {
   background-color:#c5c8d9;
@@ -65,7 +91,7 @@ p {
 }
 .developers .box {
   flex: 1;
-  background: #ffa500;
+  background: #ffffff;
   color: black;
   border-radius: 10px;
   margin: 20px 10px;
@@ -85,7 +111,7 @@ p {
 }
 .developers .box2 {
   flex: 1;
-  background: #ffa500;
+  background: #f5f5f5;
   color: black;
   border-radius: 10px;
   margin: 20px 10px;
@@ -119,7 +145,7 @@ p {
   border-radius: 5px;
   text-decoration: none;
   font-size: 18px;
-  background-color: #ffa500;
+  background-color: #f5f5f5;
   border: 2px solid  #c5c8d9;
 }
 .btn_developers:hover {

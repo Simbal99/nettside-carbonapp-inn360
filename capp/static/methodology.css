@@ -25,11 +25,11 @@ ol {
 .header {
   display: flex;  
   align-items: start;
-  background: #2a4359;
+  background: #fff;
 }
 .header .box {
   flex: 1;
-  background: #2a4359;
+  background: #fff;
   color: #fff;
   border-radius: 10px;
   margin: 20px 10px;
